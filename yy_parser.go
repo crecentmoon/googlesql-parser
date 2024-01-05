@@ -20,12 +20,12 @@ import (
 	"strconv"
 	"unicode"
 
+	"github.com/crecentmoon/googlesql-parser/ast"
+	"github.com/crecentmoon/googlesql-parser/auth"
+	"github.com/crecentmoon/googlesql-parser/charset"
+	"github.com/crecentmoon/googlesql-parser/mysql"
+	"github.com/crecentmoon/googlesql-parser/terror"
 	"github.com/pingcap/errors"
-	"github.com/pingcap/parser/ast"
-	"github.com/pingcap/parser/auth"
-	"github.com/pingcap/parser/charset"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/parser/terror"
 )
 
 var (
@@ -113,7 +113,7 @@ func New() *Parser {
 		ast.NewParamMarkerExpr == nil ||
 		ast.NewHexLiteral == nil ||
 		ast.NewBitLiteral == nil {
-		panic("no parser driver (forgotten import?) https://github.com/pingcap/parser/issues/43")
+		panic("no parser driver (forgotten import?) https://github.com/crecentmoon/googlesql-parser/issues/43")
 	}
 
 	p := &Parser{

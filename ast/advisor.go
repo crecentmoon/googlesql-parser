@@ -14,7 +14,7 @@
 package ast
 
 import (
-	"github.com/pingcap/parser/format"
+	"github.com/crecentmoon/googlesql-parser/format"
 )
 
 var _ StmtNode = &IndexAdviseStmt{}

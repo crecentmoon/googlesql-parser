@@ -11,7 +11,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-//+build !codes
+//go:build !codes
+// +build !codes
 
 package test_driver
 
@@ -23,10 +24,10 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/crecentmoon/googlesql-parser/charset"
+	"github.com/crecentmoon/googlesql-parser/mysql"
+	"github.com/crecentmoon/googlesql-parser/types"
 	"github.com/pingcap/errors"
-	"github.com/pingcap/parser/charset"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/parser/types"
 )
 
 // Kind constants.

@@ -17,15 +17,15 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/crecentmoon/googlesql-parser"
+	"github.com/crecentmoon/googlesql-parser/ast"
+	"github.com/crecentmoon/googlesql-parser/charset"
+	"github.com/crecentmoon/googlesql-parser/mysql"
+	. "github.com/crecentmoon/googlesql-parser/types"
 	. "github.com/pingcap/check"
-	"github.com/pingcap/parser"
-	"github.com/pingcap/parser/ast"
-	"github.com/pingcap/parser/charset"
-	"github.com/pingcap/parser/mysql"
-	. "github.com/pingcap/parser/types"
 
 	// import parser_driver
-	_ "github.com/pingcap/parser/test_driver"
+	_ "github.com/crecentmoon/googlesql-parser/test_driver"
 )
 
 func TestT(t *testing.T) {

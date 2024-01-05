@@ -4,9 +4,9 @@ import (
 	"bytes"
 	"fmt"
 
+	"github.com/crecentmoon/googlesql-parser"
+	"github.com/crecentmoon/googlesql-parser/ast"
 	. "github.com/pingcap/check"
-	"github.com/pingcap/parser"
-	"github.com/pingcap/parser/ast"
 )
 
 var _ = Suite(&testAstFormatSuite{})

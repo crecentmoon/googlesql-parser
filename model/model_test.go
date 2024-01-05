@@ -19,9 +19,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/crecentmoon/googlesql-parser/mysql"
+	"github.com/crecentmoon/googlesql-parser/types"
 	. "github.com/pingcap/check"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/parser/types"
 	"github.com/stretchr/testify/assert"
 )
 

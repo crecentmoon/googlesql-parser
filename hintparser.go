@@ -21,8 +21,8 @@ import (
 	"math"
 	"strconv"
 
-	"github.com/pingcap/parser/ast"
-	"github.com/pingcap/parser/model"
+	"github.com/crecentmoon/googlesql-parser/ast"
+	"github.com/crecentmoon/googlesql-parser/model"
 )
 
 type yyhintSymType struct {

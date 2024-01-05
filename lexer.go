@@ -21,10 +21,10 @@ import (
 	"unicode"
 	"unicode/utf8"
 
+	"github.com/crecentmoon/googlesql-parser/charset"
+	"github.com/crecentmoon/googlesql-parser/mysql"
+	tidbfeature "github.com/crecentmoon/googlesql-parser/tidb"
 	"github.com/pingcap/errors"
-	"github.com/pingcap/parser/charset"
-	"github.com/pingcap/parser/mysql"
-	tidbfeature "github.com/pingcap/parser/tidb"
 )
 
 var _ = yyLexer(&Scanner{})

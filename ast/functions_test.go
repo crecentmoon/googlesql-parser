@@ -14,11 +14,11 @@
 package ast_test
 
 import (
+	"github.com/crecentmoon/googlesql-parser"
+	. "github.com/crecentmoon/googlesql-parser/ast"
+	"github.com/crecentmoon/googlesql-parser/mysql"
+	"github.com/crecentmoon/googlesql-parser/test_driver"
 	. "github.com/pingcap/check"
-	"github.com/pingcap/parser"
-	. "github.com/pingcap/parser/ast"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/parser/test_driver"
 )
 
 var _ = Suite(&testFunctionsSuite{})

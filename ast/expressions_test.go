@@ -14,10 +14,10 @@
 package ast_test
 
 import (
+	. "github.com/crecentmoon/googlesql-parser/ast"
+	"github.com/crecentmoon/googlesql-parser/format"
+	"github.com/crecentmoon/googlesql-parser/mysql"
 	. "github.com/pingcap/check"
-	. "github.com/pingcap/parser/ast"
-	"github.com/pingcap/parser/format"
-	"github.com/pingcap/parser/mysql"
 )
 
 var _ = Suite(&testExpressionsSuite{})

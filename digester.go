@@ -24,7 +24,7 @@ import (
 	"unicode"
 	"unsafe"
 
-	"github.com/pingcap/parser/charset"
+	"github.com/crecentmoon/googlesql-parser/charset"
 )
 
 type Digest struct {

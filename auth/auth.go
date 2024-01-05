@@ -16,7 +16,7 @@ package auth
 import (
 	"fmt"
 
-	"github.com/pingcap/parser/format"
+	"github.com/crecentmoon/googlesql-parser/format"
 )
 
 // UserIdentity represents username and hostname.

@@ -17,9 +17,9 @@ import (
 	"sort"
 	"strings"
 
+	"github.com/crecentmoon/googlesql-parser/mysql"
+	"github.com/crecentmoon/googlesql-parser/terror"
 	"github.com/pingcap/errors"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/parser/terror"
 )
 
 var (

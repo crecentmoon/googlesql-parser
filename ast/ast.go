@@ -18,9 +18,9 @@ package ast
 import (
 	"io"
 
-	"github.com/pingcap/parser/format"
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/parser/types"
+	"github.com/crecentmoon/googlesql-parser/format"
+	"github.com/crecentmoon/googlesql-parser/model"
+	"github.com/crecentmoon/googlesql-parser/types"
 )
 
 // Node is the basic element of the AST.

@@ -17,11 +17,11 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/crecentmoon/googlesql-parser"
+	. "github.com/crecentmoon/googlesql-parser/ast"
+	. "github.com/crecentmoon/googlesql-parser/format"
+	"github.com/crecentmoon/googlesql-parser/test_driver"
 	. "github.com/pingcap/check"
-	"github.com/pingcap/parser"
-	. "github.com/pingcap/parser/ast"
-	. "github.com/pingcap/parser/format"
-	"github.com/pingcap/parser/test_driver"
 )
 
 var _ = Suite(&testCacheableSuite{})

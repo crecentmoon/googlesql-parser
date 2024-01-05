@@ -18,9 +18,9 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/crecentmoon/googlesql-parser/mysql"
+	"github.com/crecentmoon/googlesql-parser/terror"
 	"github.com/cznic/mathutil"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/parser/terror"
 	"golang.org/x/text/encoding"
 	"golang.org/x/text/transform"
 )

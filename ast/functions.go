@@ -19,10 +19,10 @@ import (
 	"strings"
 	"time"
 
+	"github.com/crecentmoon/googlesql-parser/format"
+	"github.com/crecentmoon/googlesql-parser/model"
+	"github.com/crecentmoon/googlesql-parser/types"
 	"github.com/pingcap/errors"
-	"github.com/pingcap/parser/format"
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/parser/types"
 )
 
 var (

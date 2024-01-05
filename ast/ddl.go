@@ -14,14 +14,14 @@
 package ast
 
 import (
+	"github.com/crecentmoon/googlesql-parser/auth"
+	"github.com/crecentmoon/googlesql-parser/format"
+	"github.com/crecentmoon/googlesql-parser/model"
+	"github.com/crecentmoon/googlesql-parser/mysql"
+	"github.com/crecentmoon/googlesql-parser/terror"
+	"github.com/crecentmoon/googlesql-parser/tidb"
+	"github.com/crecentmoon/googlesql-parser/types"
 	"github.com/pingcap/errors"
-	"github.com/pingcap/parser/auth"
-	"github.com/pingcap/parser/format"
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/parser/terror"
-	"github.com/pingcap/parser/tidb"
-	"github.com/pingcap/parser/types"
 )
 
 var (
@@ -640,10 +640,12 @@ const (
 )
 
 // IndexOption is the index options.
-//    KEY_BLOCK_SIZE [=] value
-//  | index_type
-//  | WITH PARSER parser_name
-//  | COMMENT 'string'
+//
+//	  KEY_BLOCK_SIZE [=] value
+//	| index_type
+//	| WITH PARSER parser_name
+//	| COMMENT 'string'
+//
 // See http://dev.mysql.com/doc/refman/5.7/en/create-table.html
 type IndexOption struct {
 	node

@@ -20,9 +20,9 @@ import (
 	"sync"
 	"time"
 
+	"github.com/crecentmoon/googlesql-parser/mysql"
+	"github.com/crecentmoon/googlesql-parser/terror"
 	"github.com/pingcap/errors"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/parser/terror"
 )
 
 // ActionType is the type for DDL action.

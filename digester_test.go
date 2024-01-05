@@ -19,8 +19,8 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/crecentmoon/googlesql-parser"
 	. "github.com/pingcap/check"
-	"github.com/pingcap/parser"
 )
 
 var _ = Suite(&testSQLDigestSuite{})

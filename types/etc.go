@@ -20,8 +20,8 @@ package types
 import (
 	"strings"
 
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/parser/terror"
+	"github.com/crecentmoon/googlesql-parser/mysql"
+	"github.com/crecentmoon/googlesql-parser/terror"
 )
 
 // IsTypeBlob returns a boolean indicating whether the tp is a blob type.
@@ -79,6 +79,7 @@ func TypeStr(tp byte) (r string) {
 // It is used for converting Text to Blob,
 // or converting Char to Binary.
 // Args:
+//
 //	tp: type enum
 //	cs: charset
 func TypeToStr(tp byte, cs string) (r string) {
